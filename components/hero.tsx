@@ -3,7 +3,7 @@ import { ArrowRight, Users, Zap, Target } from "lucide-react"
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center px-4 py-16 md:py-20 overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-muted/50 via-background to-background" />
       
@@ -21,47 +21,47 @@ export function Hero() {
         </div>
 
         {/* Main heading */}
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 text-balance">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4 md:mb-6 text-balance">
           <span className="text-foreground">Bem-vindo a</span>
           <br />
-          <span className="border-b-4 border-foreground">Neo Team</span>
+          <span className="border-b-2 md:border-b-4 border-foreground">Neo Team</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed text-pretty">
+        <p className="text-base md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 md:mb-10 leading-relaxed text-pretty px-2">
           A Neo Team nao e so uma comunidade — e um ambiente de evolucao constante. 
           Aqui se reunem pessoas que decidiram sair do comum, desenvolver mentalidade forte e construir resultados reais no digital e na vida.
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-          <Button size="lg" className="text-lg px-8 py-6 gap-2 group" asChild>
+        <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center mb-12 md:mb-16 px-2">
+          <Button size="lg" className="text-base md:text-lg px-6 md:px-8 py-5 md:py-6 gap-2 group w-full sm:w-auto" asChild>
             <a href="https://payfast.greenn.com.br/155182" target="_blank" rel="noopener noreferrer">
               Entrar na comunidade
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
           </Button>
-          <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-transparent" asChild>
+          <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 py-5 md:py-6 bg-transparent w-full sm:w-auto" asChild>
             <a href="#beneficios">Saber mais</a>
           </Button>
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
-          <div className="flex flex-col items-center gap-2 p-6 rounded-xl bg-card/50 border border-border backdrop-blur-sm">
-            <Users className="w-8 h-8 text-foreground mb-2" />
-            <span className="text-3xl font-bold text-foreground">100+</span>
-            <span className="text-sm text-muted-foreground">Membros Ativos</span>
+        <div className="grid grid-cols-3 gap-3 md:gap-6 max-w-3xl mx-auto px-2">
+          <div className="flex flex-col items-center gap-1 md:gap-2 p-3 md:p-6 rounded-xl bg-card/50 border border-border backdrop-blur-sm">
+            <Users className="w-5 h-5 md:w-8 md:h-8 text-foreground mb-1 md:mb-2" />
+            <span className="text-xl md:text-3xl font-bold text-foreground">100+</span>
+            <span className="text-xs md:text-sm text-muted-foreground text-center">Membros</span>
           </div>
-          <div className="flex flex-col items-center gap-2 p-6 rounded-xl bg-card/50 border border-border backdrop-blur-sm">
-            <Zap className="w-8 h-8 text-foreground mb-2" />
-            <span className="text-3xl font-bold text-foreground">24/7</span>
-            <span className="text-sm text-muted-foreground">Suporte Ativo</span>
+          <div className="flex flex-col items-center gap-1 md:gap-2 p-3 md:p-6 rounded-xl bg-card/50 border border-border backdrop-blur-sm">
+            <Zap className="w-5 h-5 md:w-8 md:h-8 text-foreground mb-1 md:mb-2" />
+            <span className="text-xl md:text-3xl font-bold text-foreground">24/7</span>
+            <span className="text-xs md:text-sm text-muted-foreground text-center">Suporte</span>
           </div>
-          <div className="flex flex-col items-center gap-2 p-6 rounded-xl bg-card/50 border border-border backdrop-blur-sm">
-            <Target className="w-8 h-8 text-foreground mb-2" />
-            <span className="text-3xl font-bold text-foreground">100%</span>
-            <span className="text-sm text-muted-foreground">Foco em Resultados</span>
+          <div className="flex flex-col items-center gap-1 md:gap-2 p-3 md:p-6 rounded-xl bg-card/50 border border-border backdrop-blur-sm">
+            <Target className="w-5 h-5 md:w-8 md:h-8 text-foreground mb-1 md:mb-2" />
+            <span className="text-xl md:text-3xl font-bold text-foreground">100%</span>
+            <span className="text-xs md:text-sm text-muted-foreground text-center">Resultados</span>
           </div>
         </div>
       </div>
