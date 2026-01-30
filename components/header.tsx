@@ -21,16 +21,16 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+            <a href="#sobre" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
               Sobre
             </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
-              Benefícios
+            <a href="#beneficios" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+              Beneficios
             </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+            <a href="#comunidade" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
               Comunidade
             </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+            <a href="#cta" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
               Contato
             </a>
           </nav>
