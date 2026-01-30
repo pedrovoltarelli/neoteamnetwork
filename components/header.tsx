@@ -58,20 +58,20 @@ export function Header() {
         {isMenuOpen && (
           <div className="md:hidden mt-2 px-6 py-6 rounded-2xl bg-card/95 backdrop-blur-lg border border-border">
             <nav className="flex flex-col gap-4">
-              <a href="#" className="text-foreground hover:text-primary transition-colors py-2">
+              <a href="#" onClick={() => setIsMenuOpen(false)} className="text-foreground hover:text-primary transition-colors py-2">
                 Sobre
               </a>
-              <a href="#" className="text-foreground hover:text-primary transition-colors py-2">
-                Benefícios
+              <a href="#beneficios" onClick={() => setIsMenuOpen(false)} className="text-foreground hover:text-primary transition-colors py-2">
+                Beneficios
               </a>
-              <a href="#" className="text-foreground hover:text-primary transition-colors py-2">
+              <a href="#" onClick={() => setIsMenuOpen(false)} className="text-foreground hover:text-primary transition-colors py-2">
                 Comunidade
               </a>
-              <a href="#" className="text-foreground hover:text-primary transition-colors py-2">
+              <a href="#" onClick={() => setIsMenuOpen(false)} className="text-foreground hover:text-primary transition-colors py-2">
                 Contato
               </a>
               <Button className="mt-2 w-full" asChild>
-                <a href="https://payfast.greenn.com.br/155182" target="_blank" rel="noopener noreferrer">
+                <a href="https://payfast.greenn.com.br/155182" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}>
                   Entrar agora
                 </a>
               </Button>
