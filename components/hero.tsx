@@ -3,7 +3,7 @@ import { ArrowRight, Users, Zap, Target } from "lucide-react"
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 py-16 md:py-20 overflow-hidden">
+    <section id="sobre" className="relative min-h-screen flex items-center justify-center px-4 py-16 md:py-20 overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-muted/50 via-background to-background" />
       

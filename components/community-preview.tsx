@@ -2,7 +2,7 @@
 
 export function CommunityPreview() {
   return (
-    <section className="py-16 md:py-24 px-4">
+    <section id="comunidade" className="py-16 md:py-24 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content */}
@@ -38,7 +38,7 @@ export function CommunityPreview() {
             <div className="absolute -inset-2 md:-inset-4 bg-foreground/5 rounded-2xl md:rounded-3xl blur-xl" />
             <div className="relative rounded-xl md:rounded-2xl overflow-hidden border border-border shadow-2xl bg-card">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CmhJKHrW1I8GZrxy4mUjzmmW4IdAJN.png"
+                src="/images/image.png"
                 alt="Neo Team Discord Community Preview"
                 className="w-full h-auto block"
                 loading="eager"

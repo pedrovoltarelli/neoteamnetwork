@@ -10,7 +10,7 @@ const benefits = [
 
 export function CTASection() {
   return (
-    <section className="py-16 md:py-24 px-4 bg-card">
+    <section id="cta" className="py-16 md:py-24 px-4 bg-card">
       <div className="max-w-4xl mx-auto text-center">
         {/* Section header */}
         <div className="inline-flex items-center gap-2 px-3 md:px-4 py-2 rounded-full bg-foreground/10 border border-foreground/20 mb-6 md:mb-8">
